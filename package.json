@@ -9,6 +9,17 @@
     "lint": "eslint . --ext .tsx,.ts --fix",
     "test": "npm run test"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "git add ."
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LemonArmy/Lemon-UI.git"
@@ -61,6 +72,8 @@
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.0.0",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
     "prettier": "^1.19.0",
     "style-loader": "^1.0.0",
     "vue-eslint-parser": "^6.0.4",
