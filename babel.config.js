@@ -8,7 +8,8 @@ module.exports = {
           },
         },
       ],
-      '@vue/babel-preset-jsx'
+      '@vue/babel-preset-jsx',
+      '@babel/preset-typescript'
     ],
     "plugins": [
         ["@babel/plugin-proposal-decorators", { "legacy": true }],
