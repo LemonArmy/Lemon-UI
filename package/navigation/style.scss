@@ -1,0 +1,14 @@
+.container{
+    height: 100%;
+    width: 100%;
+    .context{
+        display: flex;
+        flex-direction: column;
+        .aside{
+            width: 150px;
+        }
+        .main{
+            flex: 1;
+        }
+    }
+}
