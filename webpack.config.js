@@ -19,7 +19,11 @@ module.exports = {
     path: path.resolve(__dirname, "playground")
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".json"]
+    extensions: [".ts", ".tsx", ".js", ".json"],
+    alias:{
+      "package": path.resolve(__dirname,"package"),
+      "@": path.resolve(__dirname,'src')
+    }
   },
   module: {
     rules: [
@@ -29,13 +33,8 @@ module.exports = {
         exclude: [/node_modules/]
       },
       {
-        test: /\.tsx?$/,
-        use: ["ts-loader"],
-        exclude: [/node_modules/]
-      },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
         exclude: [/node_modules/]
       },
       {
