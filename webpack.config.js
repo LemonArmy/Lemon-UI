@@ -14,6 +14,7 @@ const devServer = {
 
 module.exports = {
   entry: "./src/index.ts",
+  devtool: 'inline-source-map',
   output: {
     filename: "index.[hash:7].js",
     path: path.resolve(__dirname, "playground")
@@ -21,7 +22,7 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"],
     alias:{
-      "package": path.resolve(__dirname,"package"),
+      "packages": path.resolve(__dirname,"packages"),
       "@": path.resolve(__dirname,'src')
     }
   },

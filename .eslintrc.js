@@ -21,6 +21,7 @@ module.exports = {
     "rules": {
         "prettier/prettier": "error",
         "semi": ["error","never"],
-        "quotes": ["error","single"]
+        "quotes": ["error","single"],
+        "no-unused-vars": 0
     }
 }

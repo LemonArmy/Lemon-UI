@@ -1,0 +1,30 @@
+@import '../../common/common.scss';
+.major-menu{
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    font-size: 14px;
+    background: $majorColor;
+    .major-menu-icon{
+        width: 208px;
+    }
+    .major-menu-active{
+        background: rgb(2, 27, 51);
+    }
+    div{
+        float: left;
+        line-height: 56px;
+        width: 108px;
+        margin: 0px 12px;
+        text-align: center;
+    }
+}
+.left-menu{
+    width: 100%;
+    .left-menu-title{
+        color:rgb(191, 191, 191);
+        height: 65px;
+        line-height: 65px;
+        padding: 0 22px;
+    }
+}
