@@ -23,7 +23,7 @@ export default class Button extends tsx.componentFactory.create({
 			size: 'medium',
 			type: 'primary'
 		}
-		for (const key in props) {//遍历props属性
+		for (const key in props) {
 			if (typeof props[key] === 'boolean' && props[key]) {
 				res += ' ' + key
 			}
