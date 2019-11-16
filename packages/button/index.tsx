@@ -32,7 +32,7 @@ class Button extends tsx.Component<Props, Events> {
 	@Prop({ default: false }) round!: boolean
 
 	@Emit('click')
-	onClick(event) {
+	onClick(event: MouseEvent) {
 		return event
 	}
 
