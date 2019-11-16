@@ -1,10 +1,6 @@
 import { RouteConfig } from '@/router'
 import { Store, GetterTree, MutationTree } from 'vuex'
 import { namespace } from 'vuex-class'
-const ModuleName = 'router'
-const a = namespace(ModuleName)
-export const NavGetter = a.Getter
-export const NavMutation = a.Mutation
 export enum Getters {
 	router = 'router',
 	majorActive = 'majorActive'
@@ -17,6 +13,12 @@ export enum Mutations {
 	router = 'router',
 	majorActive = 'majorActive'
 }
+
+const ModuleName = 'router'
+const a = namespace(ModuleName)
+export const NavGetter = a.Getter
+export const NavMutation = a.Mutation
+
 const getters: GetterTree<RouteStore, void> = {
 	[Getters.router](store) {
 		return store.routes

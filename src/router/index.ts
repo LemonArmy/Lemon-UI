@@ -9,24 +9,25 @@ interface RouteConfig extends Config {
 }
 const routeConfig: RouteConfig[] = [
 	{
-		path: '/component1',
+		path: '/component',
 		component: Wrapper,
 		meta: {
-			title: 'component1'
+			title: 'component'
 		},
 		children: [
 			{
-				path: '/component1/page1',
+				path: '/component/page',
 				component: () => import('../page1'),
 				meta: {
 					title: 'page1'
 				}
 			},
 			{
-				path: '/component1/page2',
-				component: () => import('../page2'),
+				path: '/component/button',
+				name: 'button',
+				component: () => import('../view/button'),
 				meta: {
-					title: 'page2'
+					title: 'button'
 				}
 			}
 		]

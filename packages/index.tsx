@@ -1,4 +1,4 @@
 import Navigation from './navigation'
-import Button from './button'
+import { Button, ButtonSize, ButtonType } from './button'
 
-export { Navigation, Button }
+export { Navigation, Button, ButtonSize, ButtonType }
