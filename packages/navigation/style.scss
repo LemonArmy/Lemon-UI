@@ -1,3 +1,4 @@
+@import '../common/common.scss';
 .container{
     height: 100%;
     width: 100%;
@@ -13,7 +14,7 @@
         .aside{
             height: 100%;
             width: 208px;
-            border-right: rgb(233, 233, 233) solid 1px;
+            border-right: $borderColor solid 1px;
         }
         .main{
             flex: 1;

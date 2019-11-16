@@ -2,7 +2,7 @@ import Component from 'vue-class-component'
 import * as tsx from 'vue-tsx-support'
 import './style.scss'
 import MajorMenu from './menu/MajorMenu'
-import LeftMenu from './menu/LeftMenu'
+import SubMenu from './menu/SubMenu'
 
 @Component
 export default class Navigation extends tsx.Component<{}> {
@@ -14,7 +14,7 @@ export default class Navigation extends tsx.Component<{}> {
 				</div>
 				<div class="context">
 					<div class="aside">
-						<LeftMenu></LeftMenu>
+						<SubMenu></SubMenu>
 					</div>
 					<div class="main">
 						<router-view></router-view>
