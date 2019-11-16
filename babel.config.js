@@ -15,7 +15,8 @@ module.exports = {
         ["@babel/plugin-proposal-decorators", { "legacy": true }],
         ['@babel/plugin-proposal-class-properties', { loose: true }],
         ['@babel/plugin-syntax-dynamic-import'],
-        ['@babel/plugin-proposal-optional-chaining']
+        ['@babel/plugin-proposal-optional-chaining'],
+        ['@babel/plugin-proposal-nullish-coalescing-operator']
     ]
   }
   
