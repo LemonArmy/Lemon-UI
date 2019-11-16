@@ -14,9 +14,9 @@ import './menu.scss'
 export default class MajorMenu extends tsx.Component<{}, {}, {}> {
 	@NavGetter(NavGetters.router)
 	public routes!: RouteConfig[]
-	@NavGetter(NavGetters.active)
+	@NavGetter(NavGetters.majorActive)
 	public active!: RouteConfig
-	@NavMutation(NavMutations.active)
+	@NavMutation(NavMutations.majorActive)
 	updateActive!: (route: RouteConfig) => void
 	@Watch('active')
 	handleActiveUpdate() {

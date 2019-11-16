@@ -1,15 +1,14 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-const target = process.env.TARGET || "http://127.0.0.1";
-const port = process.env.PORT || 8080;
+const target = process.env.TARGET || 'http://127.0.0.1'
+const port = process.env.PORT || 8080
 const devServer = {
   port: port,
   compress: true,
   open: true,
   historyApiFallback: true,
-  proxy: {}
 };
 
 module.exports = {
@@ -17,7 +16,8 @@ module.exports = {
   devtool: 'inline-source-map',
   output: {
     filename: "index.[hash:7].js",
-    path: path.resolve(__dirname, "playground")
+    path: path.resolve(__dirname, "playground"),
+    publicPath: '/'
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"],
@@ -35,7 +35,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ["style-loader", "css-loader","sass-loader"],
         exclude: [/node_modules/]
       },
       {
