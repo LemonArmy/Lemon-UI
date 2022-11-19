@@ -51,7 +51,7 @@
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "file-loader": "^4.2.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "typescript": "^3.7.2",
     "url-loader": "^2.2.0",
     "vue": "^2.6.10",
@@ -88,6 +88,6 @@
     "vue-eslint-parser": "^6.0.4",
     "vuex-class": "^0.3.2",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   }
 }
